@@ -1,0 +1,229 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
+
+
+header{
+    background: linear-gradient(270deg, #05445E 0%, #022534 100%);
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+.header-main{
+    flex-grow: 0.75;
+    margin-left: 166.67px;
+    padding-top: 205.83px;
+    width: 153% !important;
+}
+
+.header-title{
+    font-family: 'Rubik';
+    font-weight: 800;
+    font-size: 56px;
+    font-style: normal;
+
+    line-height: 60px;
+    color: white;
+    max-width: 632.5px;
+    width: 100%;
+    letter-spacing: -0.03em;
+}
+
+.header-sub{
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+
+    color: white;
+
+    max-width: 600px;
+    width: 100%;
+
+    margin-top: 31.26px;
+}
+
+.header-buttons{
+    display: flex;
+    margin-top: 30.51px;
+}
+
+.visible{
+    visibility: hidden;
+}
+
+.header-joinus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 195.83px;
+    width: 100%;
+
+    max-height: 53.33px;
+    height: 100%;
+    margin-right: 26.67px;
+
+    border-radius: 8px;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18.33px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: #05445E;
+    filter: drop-shadow(0px 4px 200px #29539B) drop-shadow(0px 0px 200px rgba(255, 255, 255, 0.3));
+
+    left: calc(50% - 235px/2 - 642.5px);
+    top: calc(50% - 64px/2 - 669.76px);
+}
+
+.header-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    max-width: 195.83px;
+    width: 100%;
+
+    max-height: 53.33px;
+    height: 100%;
+
+    border-radius: 8px;
+    border: 1px solid rgb(81, 81, 81);
+
+    background: linear-gradient(94.24deg, #033042 -0.03%, #005C83 99.97%);
+    /*add border gradient*/
+
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 18.33px;
+    line-height: 48px;
+    letter-spacing: -0.03em;
+    color: white;
+
+    left: calc(50% - 235px/2 - 375.5px);
+    top: calc(50% - 64px/2 - 669.76px);
+}
+
+.image-container{
+    margin-top: 44.8px;
+    max-width: 700px;
+    width: 100%;
+    z-index: auto;
+}
+
+.image-1{
+    display: flex;
+    margin-right: 33.33px;
+}
+
+ .header-logo{
+
+    z-index: 0;
+
+    width: 100%;
+    max-height: 763px;
+    height: 100%;
+    margin-left: -50%;
+    margin-top: 0px;
+} 
+
+.header-logo-image{
+    max-height: 764px;
+    height: 100%;
+    width: 100%;
+} 
+
+
+@media screen and (max-width: 600px) {
+    header{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+
+        text-align: center;
+        /* display: table-header-group; */
+        /* background-color: blue; */
+    }
+
+    .header-main{
+        /* width: 100%; */
+        width: 100vw;
+        /* background-color: red; */
+        transform: translateX(10%);
+        flex-grow: 1;
+        margin: 0;
+        padding-top: 64.4px;
+        width: 153% !important;
+        
+    }
+
+    .header-title{
+        max-width: 335px;
+        width: 100%;
+
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 32px;
+        line-height: 27px;
+/* identical to box height, or 84% */
+
+        letter-spacing: -0.03em;
+    }
+
+    .header-sub{
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 18px;
+/* or 150% */
+
+        max-width: 335px;
+        width: 100%;
+
+        text-align: center;
+        letter-spacing: -0.03em;
+    }
+
+    .header-logo{
+        margin: 0;
+        margin-left: -10%;
+        flex-grow: 1;
+    }
+
+    .header-buttons{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header-joinus{
+        visibility: none;
+
+        width: 100%;
+    }
+
+    .header-view{
+        visibility: none;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .not-visible{
+        display: none;
+    }
+
+    .visible{
+        visibility: visible;
+    }
+
+    .header-title{
+        width: 100%;
+    }
+  }

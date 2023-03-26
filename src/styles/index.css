@@ -1,0 +1,10 @@
+body{
+    overflow-x: hidden;
+    width: 100%;
+    display: table;
+    
+}
+
+.app-container{
+    width: 100%;
+}
